@@ -1,0 +1,114 @@
+Ethical Hacking Practicals – Step by Step
+Procedures
+
+Practical 1: Reconnaissance using Google and WHOIS
+1 Open a web browser.
+2 Go to the WHOIS website (https://who.is).
+3 Enter the domain name (example: prestashop.com) in the search box.
+4 Press Enter to search.
+5 View the domain information such as owner, IP address, hosting provider, and registration date.
+6 Analyze the gathered reconnaissance information.
+
+Practical 2: Encryption and Decryption using CryptTool (RC4)
+1 Open CryptTool software.
+2 Select Encrypt/Decrypt option.
+3 Choose the RC4 algorithm.
+4 Enter a plaintext message or password.
+5 Click Encrypt to generate ciphertext.
+6 Copy the ciphertext.
+7 Select the Decrypt option.
+8 Paste the ciphertext and click Decrypt to retrieve the original text.
+
+Practical 2.2: Password Cracking using Cain and Abel
+1 Open Cain and Abel tool.
+2 Click Hash Calculator.
+3 Enter a password to generate a hash value (example MD5).
+4 Copy the hash value.
+5 Paste the hash into the hash list.
+6 Right click on the hash value.
+7 Select Dictionary Attack.
+8 Add a wordlist file.
+9 Start the dictionary attack to attempt password cracking.
+
+Practical 3: Network Commands (Traceroute, Ping, Ifconfig,
+Netstat)
+1 Open Command Prompt or terminal.
+2 Run tracert www.prestashop.com to trace the route of packets.
+3 Run ping www.prestashop.com to check network connectivity.
+4 Run ifconfig to view network configuration details.
+5 Run netstat to display active network connections.
+
+Practical 3.2: ARP Poisoning using Cain and Abel
+1 Open Cain and Abel.
+2 Go to the Sniffer tab.
+3 Start the sniffer and select the network adapter.
+4 Click OK to enable scanning.
+5 Click the + button to scan for hosts.
+6 View the list of connected hosts.
+7 Open the ARP tab.
+8 Click + to select source and target systems.
+9 Start ARP poisoning.
+10 Monitor captured credentials and network activity.
+
+Practical 4: Port Scanning using Nmap
+1 Install Nmap on the system.
+2 Open Command Prompt.
+3 Run 'nmap' to confirm installation.
+4 Run SYN scan: nmap -sS scanme.nmap.org.
+5 Run ACK scan: nmap -sA -T4 scanme.nmap.org.
+6 Run FIN scan: nmap -sF scanme.nmap.org.
+7 Run NULL scan: nmap -sN scanme.nmap.org.
+8 Run XMAS scan: nmap -sX scanme.nmap.org.
+
+Practical 5: Network Packet Capture using Wireshark
+1 Install and open Wireshark.
+2 Go to the Capture menu.
+3 Select the network interface.
+4 Click Start to begin packet capture.
+5 Open a website in a browser.
+6 Login using credentials.
+7 Observe packets being captured.
+8 Apply HTTP filter.
+9 Stop capture and analyze packets for transmitted data.
+
+Practical 6: Cross Site Scripting (XSS)
+1 Open a vulnerable web application.
+2 Locate an input field or comment box.
+3 Enter the script: alert('XSS Attack').
+4 Submit the input.
+5 If an alert box appears, the site is vulnerable to XSS.
+
+Practical 7: Session Impersonation using Cookies
+1 Open Firefox browser.
+2 Install a cookie management extension (example EditThisCookie).
+3 Login to a website.
+4 Export the session cookie.
+5 Logout from the website.
+6 Import the cookie again.
+7 Access the website session using the imported cookie.
+
+Practical 8: SQL Injection
+1 Start XAMPP and run Apache and MySQL.
+2 Open browser and navigate to localhost/phpmyadmin.
+3 Create a database.
+4 Open the vulnerable login page.
+5 Set security level to low.
+6 Enter SQL payload: 1 OR 1=1.
+7 If login bypass occurs, the system is vulnerable.
+
+Practical 9: Python Keylogger
+1 Install Python.
+2 Install the pynput library using pip install pynput.
+3 Write the keylogger script.
+4 Run the program.
+5 Press keys on keyboard.
+6 Check the log file where captured keystrokes are stored.
+
+Practical 10: Exploitation using Metasploit
+1 Install Metasploit Framework.
+2 Open terminal or command prompt.
+3 Start Metasploit using msfconsole.
+4 Search for available exploits.
+5 Select an exploit module.
+6 Set target IP address.
+7 Execute the exploit module
